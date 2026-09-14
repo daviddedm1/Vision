@@ -1,0 +1,25 @@
+# Binaries
+*.o
+*.obj
+*.dll
+*.exe
+*.pdb
+*.so
+*.dylib
+
+# Directories
+bin/
+obj/
+.vs/
+.vscode/
+.idea/
+dist/
+build/
+
+# Files
+*.user
+*.suo
+*.sln.docstates
+*.log
+.DS_Store
+Thumbs.db
