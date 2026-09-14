@@ -24,49 +24,53 @@
         </Border>
 
         <!-- Groups Panel -->
-        <StackPanel Grid.Row="1" Grid.Column="0" Background="#2D2D2D" Padding="10">
-            <TextBlock Text="Groups" FontWeight="Bold" Margin="0,0,0,10"/>
-            <ListBox x:Name="GroupList" 
-                     Background="#3D3D3D" 
-                     Foreground="White"
-                     SelectionChanged="GroupList_SelectionChanged"/>
-        </StackPanel>
+        <Border Grid.Row="1" Grid.Column="0" Background="#2D2D2D" Padding="10">
+            <StackPanel>
+                <TextBlock Text="Groups" FontWeight="Bold" Margin="0,0,0,10"/>
+                <ListBox x:Name="GroupList" 
+                         Background="#3D3D3D" 
+                         Foreground="White"
+                         SelectionChanged="GroupList_SelectionChanged"/>
+            </StackPanel>
+        </Border>
 
         <!-- Slides Panel -->
-        <StackPanel Grid.Row="1" Grid.Column="1" Background="#2D2D2D" Padding="10" Margin="10,0">
-            <TextBlock Text="Slides" FontWeight="Bold" Margin="0,0,0,10"/>
-            <ListBox x:Name="SlideList" 
-                     Background="#3D3D3D" 
-                     Foreground="White"
-                     SelectionChanged="SlideList_SelectionChanged"/>
-        </StackPanel>
+        <Border Grid.Row="1" Grid.Column="1" Background="#2D2D2D" Padding="10" Margin="10,0">
+            <StackPanel>
+                <TextBlock Text="Slides" FontWeight="Bold" Margin="0,0,0,10"/>
+                <ListBox x:Name="SlideList" 
+                         Background="#3D3D3D" 
+                         Foreground="White"
+                         SelectionChanged="SlideList_SelectionChanged"/>
+            </StackPanel>
+        </Border>
 
         <!-- Preview Panel -->
-        <StackPanel Grid.Row="1" Grid.Column="2" Background="#2D2D2D" Padding="10">
-            <TextBlock Text="Preview" FontWeight="Bold" Margin="0,0,0,10"/>
-            <Border Background="#3D3D3D" Padding="10">
-                <StackPanel>
-                    <TextBlock x:Name="PreviewTitle" FontWeight="Bold" TextWrapping="Wrap" Margin="0,0,0,10"/>
-                    <TextBlock x:Name="PreviewContent" TextWrapping="Wrap" FontSize="12"/>
-                </StackPanel>
-            </Border>
-        </StackPanel>
+        <Border Grid.Row="1" Grid.Column="2" Background="#2D2D2D" Padding="10">
+            <StackPanel>
+                <TextBlock Text="Preview" FontWeight="Bold" Margin="0,0,0,10"/>
+                <Border Background="#3D3D3D" Padding="10">
+                    <StackPanel>
+                        <TextBlock x:Name="PreviewTitle" FontWeight="Bold" TextWrapping="Wrap" Margin="0,0,0,10"/>
+                        <TextBlock x:Name="PreviewContent" TextWrapping="Wrap" FontSize="12"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Border>
 
         <!-- Control Panel -->
-        <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" 
-                    Orientation="Horizontal" 
-                    Background="#252525" 
-                    Padding="10" 
-                    HorizontalAlignment="Right">
-            <Button Content="Send" Click="Send_Click" 
-                    Background="#0078D4" Foreground="White"
-                    Padding="15,10" Margin="5" Width="80"/>
-            <Button Content="New Playlist" Click="NewPlaylist_Click"
-                    Background="#107C10" Foreground="White"
-                    Padding="15,10" Margin="5" Width="100"/>
-            <Button Content="Settings" Click="Settings_Click"
-                    Background="#555555" Foreground="White"
-                    Padding="15,10" Margin="5" Width="80"/>
-        </StackPanel>
+        <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="#252525" Padding="10">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Send" Click="Send_Click" 
+                        Background="#0078D4" Foreground="White"
+                        Padding="15,10" Margin="5" Width="80"/>
+                <Button Content="New Playlist" Click="NewPlaylist_Click"
+                        Background="#107C10" Foreground="White"
+                        Padding="15,10" Margin="5" Width="100"/>
+                <Button Content="Settings" Click="Settings_Click"
+                        Background="#555555" Foreground="White"
+                        Padding="15,10" Margin="5" Width="80"/>
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>
