@@ -6,17 +6,19 @@
         Background="Black"
         Topmost="False">
     <Grid x:Name="MainGrid" Background="Black">
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
             <TextBlock x:Name="TitleText" 
                        FontSize="72" 
                        FontWeight="Bold"
                        Foreground="White" 
                        TextWrapping="Wrap"
+                       TextAlignment="Center"
                        Margin="50"/>
             <TextBlock x:Name="ContentText" 
                        FontSize="48" 
                        Foreground="#CCCCCC" 
                        TextWrapping="Wrap"
+                       TextAlignment="Center"
                        Margin="50" 
                        Opacity="0.8"/>
         </StackPanel>
